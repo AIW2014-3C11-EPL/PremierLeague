@@ -1,0 +1,224 @@
+<section id="ccr-main-section">
+  <div class="container">
+
+
+    <section id="ccr-left-section" class="col-md-8">
+
+      <div class="current-page">
+        <a href="index.html"><i class="fa fa-home"></i> <i class="fa fa-angle-double-right"></i></a>Player <i class="fa fa-angle-double-right"></i>
+      </div> <!-- / .current-page -->
+
+
+      <article id="ccr-article">
+        <h1><%= @Player.name %> </h1>
+
+
+        <img src="<%= @Player.avatar %>" style="width:794px ;height:500px ">
+        <div class="container">
+          <div class="table-responsive">
+            <table class="table">
+              <tr>
+                <td>Số áo</td>
+                <td><%= @Player.number %></td>
+              </tr>
+
+              <tr>
+                <td>Vị trí</td>
+                <td><%= @Player.position %></td>
+              </tr>
+
+              <tr>
+                <td>Ngày sinh</td>
+                <td><%= @Player.birthday %></td>
+              </tr>
+
+              <tr>
+                <td>Tuổi</td>
+                <td><%= @Player.age %></td>
+              </tr>
+
+              <tr>
+                <td>Quốc tịch</td>
+                <td><%= @Player.nationality %></td>
+              </tr>
+
+              <tr>
+                <td>Chiều cao</td>
+                <td><%= @Player.height %></td>
+              </tr>
+
+              <tr>
+                <td>Cân nặng</td>
+                <td><%= @Player.weight %></td>
+              </tr>
+
+              <tr>
+                <td>Số lần ra sân</td>
+                <td><%= @Player.appear %></td>
+              </tr>
+
+              <tr>
+                <td>Bàn thắng</td>
+                <td><%= @Player.goal %></td>
+              </tr>
+
+              <tr>
+                <td>Thẻ vàng</td>
+                <td><%= @Player.yellow %></td>
+              </tr>
+
+              <tr>
+                <td>Thẻ đỏ</td>
+                <td><%= @Player.red %></td>
+              </tr>
+
+            </table>
+
+          </div>
+        </div>
+
+
+      </article> <!-- /#ccr-single-post -->
+
+
+
+
+    </section><!-- /.col-md-8 / #ccr-left-section -->
+
+
+
+    <aside id="ccr-right-section" class="col-md-4">
+
+
+      <section id="ccr-calender">
+
+        <table id="calendar">
+          <caption >LIVE!</caption>
+          <thead data-iceapc="1">
+          <tr>
+            <th width="15%" title="Monday" scope="col">Pos</th>
+            <th colspan="4" scope="col" title="Tuesday">Club</th>
+            <th width="15%" title="Saturday" scope="col">Pld</th>
+            <th width="15%" title="Sunday" scope="col">Pts</th>
+          </tr>
+          </thead>
+
+          <tfoot data-iceapc="4">
+          <tr data-iceapc="3">
+            <td colspan="4" id="prev"><a href="<%= Pathname(home_leaguetable_path) %>" title="Previous">&laquo; Chi tiết</a></td>
+            <td colspan="3" id="next" class="pad"><a href="<%= Pathname(home_form_path) %>" title="Next">Phong độ &raquo;</a></td>
+          </tr>
+          </tfoot>
+
+          <tbody>
+          <tr>
+            <td>1 &#9679;</td><td colspan="4"><div align="center">Chelsea</div></td>
+            <td>11</td>
+            <td >29</td>
+          </tr>
+          <tr>
+            <td>2 &#9679;</td><td colspan="4"><div align="center">Southampton</div></td>
+            <td>11</td>
+            <td >25</td>
+          </tr>
+          <tr>
+            <td>3 &#9679;</td><td colspan="4"><div align="center">Man City</div></td>
+            <td>11</td>
+            <td >21</td>
+          </tr>
+          <tr>
+            <td>4 &uarr;</td><td colspan="4"><div align="center">West Ham</div></td>
+            <td>11</td>
+            <td >18</td>
+          </tr>
+          <tr>
+            <td>5 &uarr;</td><td colspan="4"><div align="center">Swansea</div></td>
+            <td>11</td>
+            <td >18</td>
+          </tr>
+          <tr>
+            <td>6 &darr;</td><td colspan="4"><div align="center">Arsenal</div></td>
+            <td>11</td>
+            <td >17</td>
+          </tr>
+          <tr>
+            <td>7 &uarr;</td><td colspan="4"><div align="center">Man Utd</div></td>
+            <td>11</td>
+            <td >16</td>
+          </tr>
+          <tr>
+            <td>8 &uarr;</td><td colspan="4"><div align="center">Newcastle</div></td>
+            <td>11</td>
+            <td >16</td>
+          </tr>
+          <tr>
+            <td>9 &uarr;</td><td colspan="4"><div align="center">Stoke</div></td>
+            <td>11</td>
+            <td >15</td>
+          </tr>
+          <tr>
+            <td>10 &darr;</td><td colspan="4"><div align="center">Everton</div></td>
+            <td>11</td>
+            <td >14</td>
+          </tr>
+          <tr>
+            <td>11 &darr;</td><td colspan="4"><div align="center">Liverpool</div></td>
+            <td>11</td>
+            <td >14</td>
+          </tr>
+          <tr>
+            <td>12 &darr;</td><td colspan="4"><div align="center">Spurs</div></td>
+            <td>11</td>
+            <td >14</td>
+          </tr>
+          <tr>
+            <td>13 &darr;</td><td colspan="4"><div align="center">West Brom</div></td>
+            <td>11</td>
+            <td >13</td>
+          </tr>
+          <tr>
+            <td>14 &uarr;</td><td colspan="4"><div align="center">Sunderland</div></td>
+            <td>11</td>
+            <td >12</td>
+          </tr>
+          <tr>
+            <td>15 &darr;</td><td colspan="4"><div align="center">Hull</div></td>
+            <td>11</td>
+            <td >11</td>
+          </tr>
+          <tr>
+            <td>16 &#9679;</td><td colspan="4"><div align="center">Aston Villa</div></td>
+            <td>11</td>
+            <td >11</td>
+          </tr>
+          <tr>
+            <td>17 &#9679;</td><td colspan="4"><div align="center">Crystal Palace</div></td>
+            <td>11</td>
+            <td >9</td>
+          </tr>
+          <tr>
+            <td>18 &#9679;</td><td colspan="4"><div align="center">Leicester</div></td>
+            <td>11</td>
+            <td >9</td>
+          </tr>
+          <tr>
+            <td>19 &#9679;</td><td colspan="4"><div align="center">QPR</div></td>
+            <td>11</td>
+            <td >8</td>
+          </tr>
+          <tr>
+            <td>20 &#9679;</td><td colspan="4"><div align="center">Burnley</div></td>
+            <td>11</td>
+            <td >7</td>
+          </tr>
+          </tbody>
+        </table>
+
+      </section>
+
+
+    </aside><!-- / .col-md-4  / #ccr-right-section -->
+
+
+  </div><!-- /.container -->
+</section><!-- / #ccr-main-section -->

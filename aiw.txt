@@ -1,0 +1,44 @@
+Club
+name :string
+logo :string
+establish :datetime
+manager :string
+nick :string
+stadium :string
+background :text
+
+Player
+club_id :int
+name :string
+avatar :string
+number :int
+club :string
+position :string
+birthday :datetime
+age :int
+nationality :string
+height :string
+weight :string
+appear :int
+goal :int
+yellow :int
+red :int
+
+Stadium
+club_id :int
+name :string
+picture :string
+address :string
+built :int
+capacity :int
+area :string
+height :string
+
+
+
+Hoa: Arsenal -> Everton
+Tram: Hull -> newcastle
+Vu: con lai
+
+
+abcdef

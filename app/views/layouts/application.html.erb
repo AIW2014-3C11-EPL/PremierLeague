@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>AIW 2014 Starter Kit</title>
+  <title>Barclays Premier League</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -12,7 +12,9 @@
 <p class="alert"><%= alert %></p>
 -->
 
+<%= render 'layouts/header' %>
 <%= yield %>
+<%= render 'layouts/footer' %>
 
 </body>
 </html>

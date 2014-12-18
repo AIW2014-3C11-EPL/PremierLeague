@@ -1,8 +1,18 @@
 Rails.application.routes.draw do
   root 'home#index'
 
-  get 'home/index'
-  get 'home/sample'
+  get 'home/index', to: 'home#index', as: 'home_index'
+  get 'home/matchday', to: 'home#matchday', as: 'home_matchday'
+  get 'home/form', to: 'home#form', as: 'home_form'
+  get 'home/leaguetable', to: 'home#leaguetable', as: 'home_leaguetable'
+  get 'home/team', to: 'home#team', as: 'home_team'
+  get 'home/news', to: 'home#news', as: 'home_news'
+  get 'home/new1', to: 'home#new1', as: 'home_new1'
+  get 'home/new2', to: 'home#new2', as: 'home_new2'
+  get 'home/new3', to: 'home#new3', as: 'home_new3'
+  get 'home/single/:id', to: 'home#single', as: 'home_single'
+  get 'home/player/:id', to: 'home#player', as: 'home_player'
+  get 'home/detail/:id', to: 'home#detail', as: 'home_detail'
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)

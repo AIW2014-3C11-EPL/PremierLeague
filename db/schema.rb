@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141101035728) do
+ActiveRecord::Schema.define(version: 20141218135628) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -45,6 +45,38 @@ ActiveRecord::Schema.define(version: 20141101035728) do
 
   add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true, using: :btree
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true, using: :btree
+
+  create_table "clubs", force: true do |t|
+    t.string   "name"
+    t.string   "logo"
+    t.string   "establish"
+    t.string   "manager"
+    t.string   "nick"
+    t.string   "stadium"
+    t.text     "background"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "players", force: true do |t|
+    t.integer  "club_id"
+    t.string   "name"
+    t.string   "avatar"
+    t.integer  "number"
+    t.string   "club"
+    t.string   "position"
+    t.string   "birthday"
+    t.integer  "age"
+    t.string   "nationality"
+    t.string   "height"
+    t.string   "weight"
+    t.integer  "appear"
+    t.integer  "goal"
+    t.integer  "yellow"
+    t.integer  "red"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false

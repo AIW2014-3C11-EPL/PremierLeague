@@ -1,0 +1,126 @@
+<header id="ccr-header">
+
+
+
+
+  <section id="ccr-site-title">
+    <div class="container">
+      <div class="site-logo">
+        <a href="<%= Pathname(home_index_path) %>" class="navbar-brand">
+          <img src="<%= image_path('logo.png') %>" alt="Side Logo" />
+          <h3><b><span>THE CLONE WEBSITE OF</span></b></h3>
+        </a>
+      </div> <!-- / .navbar-header -->
+
+      <div class="add-space">
+        <img src="<%= image_path('banner.png') %>" alt="Side Logo" />
+      </div> <!-- / .adspace -->
+
+    </div>	<!-- /.container -->
+  </section> <!-- / #ccr-site-title -->
+
+
+
+  <section id="ccr-nav-main">
+    <nav class="main-menu">
+      <div class="container">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".ccr-nav-main">
+            <i class="fa fa-bars"></i>
+          </button> <!-- /.navbar-toggle -->
+        </div> <!-- / .navbar-header -->
+
+        <div class="collapse navbar-collapse ccr-nav-main">
+          <ul class="nav navbar-nav">
+            <li><a class="active" href="<%= Pathname(home_index_path) %>">Trang chủ</a></li>
+            <li><a href="<%= Pathname(home_news_path) %>">Tin tức</a></li>
+
+            <li class="dropdown">
+              <a class="active">CLB<i class="fa fa-caret-down"></i></a>
+              <ul class="sub-menu">
+
+            <%  if (!@All.blank?)
+               @All.each do |item| %>
+                <li> <%= link_to home_single_path(item.id) do %> <%= item.name %> <% end %> </li>
+            <% end end %>
+              </ul><!-- /.sub-menu -->
+            </li><!-- /.dropdown -->
+
+
+            <li class="dropdown">
+              <a class="active">Cầu thủ<i class="fa fa-caret-down"></i></a>
+              <ul class="sub-menu">
+
+                <%  if (!@All.blank?)
+                      @All.each do |item| %>
+                        <li> <%= link_to home_detail_path(item.id) do %> <%= item.name %> <% end %> </li>
+                    <% end end %>
+
+              </ul><!-- /.sub-menu -->
+            </li><!--  /.dropdown -->
+
+            <li class="dropdown"><a class="active">Bảng xếp hạng<i class="fa fa-caret-down"></i></a>
+              <ul class="sub-menu">
+                <li><a href="<%= Pathname(home_leaguetable_path)%>">Chi tiết</a></li>
+                <li><a href="<%= Pathname(home_form_path) %>">Phong độ</a></li>
+                <li><a href="<%= Pathname(home_team_path) %>">Đội hình tiêu biểu</a></li>
+              </ul><!-- /.sub-menu -->
+            </li><!--  /.dropdown -->
+            <li><a href="<%= Pathname(home_matchday_path) %>">Lịch thi đấu</a></li>
+          </ul> <!-- /  .nav -->
+        </div><!-- /  .collapse .navbar-collapse  -->
+
+        <div id="currentTime" class="pull-right current-time">
+          <i class="fa fa-clock-o"></i> 12:10 pm
+
+
+        </div><!-- / #currentTime -->
+
+      </div>	<!-- /.container -->
+    </nav> <!-- /.main-menu -->
+  </section> <!-- / #ccr-nav-main -->
+
+
+
+  <section id="ccr-nav-below-main">
+    <nav class="second-menu">
+      <div class="container">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".ccr-nav-below-main">
+            <i class="fa fa-bars"></i>
+          </button> <!-- /.navbar-toggle -->
+        </div> <!-- / .navbar-header -->
+
+        <div class="collapse navbar-collapse ccr-nav-below-main">
+          <ul class="nav navbar-nav">
+            <li><a href="#"><img src="<%= image_path('more/club/miniarsenal.png') %>"/></a></li>
+            <li><a href="#"><img src="<%= image_path('more/club/miniaston.png') %>"/></a></li>
+            <li><a href="#"><img src="<%= image_path('more/club/miniburnley.png') %>"/></a></li>
+            <li><a href="#"><img src="<%= image_path('more/club/minichelsea.png') %>"/></a></li>
+            <li><a href="#"><img src="<%= image_path('more/club/minicrystal.png') %>"/></a></li>
+            <li><a href="#"><img src="<%= image_path('more/club/minieverton.png') %>"/></a></li>
+            <li><a href="#"><img src="<%= image_path('more/club/minihull.png') %>"/></a></li>
+            <li><a href="#"><img src="<%= image_path('more/club/minileicester.png') %>"/></a></li>
+            <li><a href="#"><img src="<%= image_path('more/club/miniliverpool.png') %>"/></a></li>
+            <li><a href="#"><img src="<%= image_path('more/club/minimanc.png') %>"/></a></li>
+            <li><a href="#"><img src="<%= image_path('more/club/minimanu.png') %>"/></a></li>
+            <li><a href="#"><img src="<%= image_path('more/club/mininewcastle.png') %>"/></a></li>
+            <li><a href="#"><img src="<%= image_path('more/club/miniqpr.png') %>"/></a></li>
+            <li><a href="#"><img src="<%= image_path('more/club/minisouth.png') %>"/></a></li>
+            <li><a href="#"><img src="<%= image_path('more/club/ministoke.png') %>"/></a></li>
+            <li><a href="#"><img src="<%= image_path('more/club/minisunderland.png') %>"/></a></li>
+            <li><a href="#"><img src="<%= image_path('more/club/miniswansea.png') %>"/></a></li>
+            <li><a href="#"><img src="<%= image_path('more/club/minitot.png') %>"/></a></li>
+            <li><a href="#"><img src="<%= image_path('more/club/miniwestbrom.png') %>"/></a></li>
+            <li><a href="#"><img src="<%= image_path('more/club/miniwestham.png') %>"/></a></li>
+          </ul> <!-- /.nav /.navbar-nav -->
+        </div>
+
+
+      </div><!-- /.container -->
+    </nav><!-- /.second-menu -->
+  </section><!-- / #ccr-nav-below-main -->
+
+</header> <!-- /#ccr-header -->

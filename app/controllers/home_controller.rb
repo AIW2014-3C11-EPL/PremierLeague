@@ -1,20 +1,22 @@
 class HomeController < ApplicationController
   def index
+    @All=Club.all
   end
 
-  def categories
 
+  def single
+    @Club = Club.find(params[:id])
   end
 
-  def details
-
+  def player
+    #@Club = Club.find(params[:id])
+    @Player = Player.find(params[:id])
   end
 
-  def search
+  def detail
+    @Club = Club.find(params[:id])
 
+    @Players = @Club.players
   end
 
-  def sample
-    
-  end
 end

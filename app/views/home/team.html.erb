@@ -1,0 +1,269 @@
+<section id="ccr-main-section">
+<div class="container">
+
+  <div class="current-page">
+    <a href="<%= Pathname(home_index_path) %>"><i class="fa fa-home"></i> <i class="fa fa-angle-double-right"></i></a>Đội hình tiêu biểu
+  </div> <!-- / .current-page -->
+
+<section id="ccr-left-section" class="col-md-8">
+
+
+
+  <div class="ccr-last-update">
+    <div class="update-ribon">Fantasy Premier League</div> <!-- /.update-ribon -->
+    <span class="update-ribon-right"></span> <!-- /.update-ribon-left -->
+    <div class="update-news-text" id="update-news-text">
+      <ul id="latestUpdate">
+
+      </ul>
+    </div> <!-- /.update-text -->
+
+    <div class="update-right-border"></div> <!-- /.update-right-border -->
+  </div> <!-- / .ccr-last-update -->
+
+
+  <section id="ccr-slide-main" class="carousel slide" data-ride="carousel">
+
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+      <div class="active item">
+        <div class="container slide-element">
+          <img src="<%=  image_path('team/main-slide-1.jpg') %>" alt="Main Slide Image 1">
+          <p><a href="#">Tuần 12</a></p>
+        </div> <!-- /.slide-element -->
+      </div> <!--/.active /.item -->
+
+      <div class="item">
+        <div class="container slide-element">
+          <img src="<%=  image_path('team/main-slide-2.jpg') %>" alt="Main Slide Image 1">
+          <p><a href="#">Tuần 11</a></p>
+        </div> <!-- /.slide-element -->
+      </div> <!--  /.item -->
+
+      <div class="item">
+        <div class="container slide-element">
+          <img src="<%=  image_path('team/main-slide-3.jpg') %>" alt="Main Slide Image 1">
+          <p><a href="#">Tuần 10</a></p>
+        </div> <!-- /.slide-element -->
+      </div> <!-- .item -->
+
+      <div class="item">
+        <div class="container slide-element">
+          <img src="<%=  image_path('team/main-slide-4.jpg') %>" alt="Main Slide Image 1">
+          <p><a href="#">Tuần 9</a></p>
+        </div> <!-- /.slide-element -->
+      </div> <!-- /.item -->
+
+
+    </div> <!-- /.carousel-inner -->
+
+    <!-- slider nav -->
+    <a class="carousel-control left" href="#ccr-slide-main" data-slide="prev"><i class="fa fa-arrow-left"></i></a>
+    <a class="carousel-control right" href="#ccr-slide-main" data-slide="next"><i class="fa fa-arrow-right"></i></a>
+
+    <ol class="carousel-indicators">
+      <li data-target="#ccr-slide-main" data-slide-to="0" class="active"></li>
+      <li data-target="#ccr-slide-main" data-slide-to="1"></li>
+      <li data-target="#ccr-slide-main" data-slide-to="2"></li>
+      <li data-target="#ccr-slide-main" data-slide-to="3"></li>
+    </ol> <!-- /.carousel-indicators -->
+
+
+  </section><!-- /#ccr-slide-main -->
+
+
+
+
+  <section id="ccr-latest-post-gallery">
+    <div class="ccr-gallery-ttile">
+      <span></span>
+      <p>Player Features</p>
+    </div><!-- .ccr-gallery-ttile -->
+
+
+    <ul class="ccr-latest-post">
+      <li>
+        <div class="ccr-thumbnail">
+          <img src="<%=  image_path('news/thumbnail1.jpg') %>" alt="Thumbnail 1">
+          <p><a href="#postlink">Read More</a></p>
+        </div>
+        <h4><a href="#postlink">On this day in 1999: Hornets stung by high-flying Sunderland</a></h4>
+      </li>
+      <li>
+        <div class="ccr-thumbnail">
+          <img src="<%=  image_path('news/thumbnail2.jpg') %>" alt="Thumbnail 1">
+          <p><a href="#postlink">Read More</a></p>
+        </div>
+        <h4><a href="#postlink">Under 21s: Fixture and ticket details</a></h4>
+      </li>
+      <li>
+        <div class="ccr-thumbnail">
+          <img src="<%=  image_path('news/thumbnail3.jpg') %>" alt="Thumbnail 1">
+          <p><a href="#postlink">Read More</a></p>
+        </div>
+        <h4><a href="#postlink">On this day in 2000: Ferdinand makes record-breaking move to Leeds</a></h4>
+      </li>
+      <li>
+        <div class="ccr-thumbnail">
+          <img src="<%=  image_path('news/thumbnail4.jpg') %>" alt="Thumbnail 1">
+          <p><a href="#postlink">Read More</a></p>
+        </div>
+        <h4><a href="#postlink">On this day in 2001: Henry pounces as Arsenal topple Man Utd</a></h4>
+      </li>
+      <li>
+        <div class="ccr-thumbnail">
+          <img src="<%=  image_path('news/thumbnail5.jpg') %>" alt="Thumbnail 1">
+          <p><a href="#postlink">Read More</a></p>
+        </div>
+        <h4><a href="#postlink">On this day in 2013: Rampant Man City hit Spurs for six</a></h4>
+      </li>
+    </ul> <!-- /.ccr-latest-post -->
+
+  </section> <!--  /#ccr-latest-post-gallery  -->
+
+  <section class="bottom-border">
+  </section> <!-- /#bottom-border -->
+
+
+
+</section><!-- /.col-md-8 / #ccr-left-section -->
+
+
+
+<aside id="ccr-right-section" class="col-md-4 ccr-home">
+
+
+  <section id="ccr-calender">
+
+    <table id="calendar">
+      <caption >LIVE!</caption>
+      <thead data-iceapc="1">
+      <tr>
+        <th width="15%" title="Monday" scope="col">Pos</th>
+        <th colspan="4" scope="col" title="Tuesday">Club</th>
+        <th width="15%" title="Saturday" scope="col">Pld</th>
+        <th width="15%" title="Sunday" scope="col">Pts</th>
+      </tr>
+      </thead>
+
+      <tfoot data-iceapc="4">
+      <tr data-iceapc="3">
+        <td colspan="4" id="prev"><a href="<%= Pathname(home_leaguetable_path) %>" title="Previous">&laquo; Chi tiết</a></td>
+        <td colspan="3" id="next" class="pad"><a href="<%= Pathname(home_form_path) %>" title="Next">Phong độ &raquo;</a></td>
+      </tr>
+      </tfoot>
+
+      <tbody>
+      <tr>
+        <td>1 &#9679;</td><td colspan="4"><div align="center">Chelsea</div></td>
+        <td>11</td>
+        <td >29</td>
+      </tr>
+      <tr>
+        <td>2 &#9679;</td><td colspan="4"><div align="center">Southampton</div></td>
+        <td>11</td>
+        <td >25</td>
+      </tr>
+      <tr>
+        <td>3 &#9679;</td><td colspan="4"><div align="center">Man City</div></td>
+        <td>11</td>
+        <td >21</td>
+      </tr>
+      <tr>
+        <td>4 &uarr;</td><td colspan="4"><div align="center">West Ham</div></td>
+        <td>11</td>
+        <td >18</td>
+      </tr>
+      <tr>
+        <td>5 &uarr;</td><td colspan="4"><div align="center">Swansea</div></td>
+        <td>11</td>
+        <td >18</td>
+      </tr>
+      <tr>
+        <td>6 &darr;</td><td colspan="4"><div align="center">Arsenal</div></td>
+        <td>11</td>
+        <td >17</td>
+      </tr>
+      <tr>
+        <td>7 &uarr;</td><td colspan="4"><div align="center">Man Utd</div></td>
+        <td>11</td>
+        <td >16</td>
+      </tr>
+      <tr>
+        <td>8 &uarr;</td><td colspan="4"><div align="center">Newcastle</div></td>
+        <td>11</td>
+        <td >16</td>
+      </tr>
+      <tr>
+        <td>9 &uarr;</td><td colspan="4"><div align="center">Stoke</div></td>
+        <td>11</td>
+        <td >15</td>
+      </tr>
+      <tr>
+        <td>10 &darr;</td><td colspan="4"><div align="center">Everton</div></td>
+        <td>11</td>
+        <td >14</td>
+      </tr>
+      <tr>
+        <td>11 &darr;</td><td colspan="4"><div align="center">Liverpool</div></td>
+        <td>11</td>
+        <td >14</td>
+      </tr>
+      <tr>
+        <td>12 &darr;</td><td colspan="4"><div align="center">Spurs</div></td>
+        <td>11</td>
+        <td >14</td>
+      </tr>
+      <tr>
+        <td>13 &darr;</td><td colspan="4"><div align="center">West Brom</div></td>
+        <td>11</td>
+        <td >13</td>
+      </tr>
+      <tr>
+        <td>14 &uarr;</td><td colspan="4"><div align="center">Sunderland</div></td>
+        <td>11</td>
+        <td >12</td>
+      </tr>
+      <tr>
+        <td>15 &darr;</td><td colspan="4"><div align="center">Hull</div></td>
+        <td>11</td>
+        <td >11</td>
+      </tr>
+      <tr>
+        <td>16 &#9679;</td><td colspan="4"><div align="center">Aston Villa</div></td>
+        <td>11</td>
+        <td >11</td>
+      </tr>
+      <tr>
+        <td>17 &#9679;</td><td colspan="4"><div align="center">Crystal Palace</div></td>
+        <td>11</td>
+        <td >9</td>
+      </tr>
+      <tr>
+        <td>18 &#9679;</td><td colspan="4"><div align="center">Leicester</div></td>
+        <td>11</td>
+        <td >9</td>
+      </tr>
+      <tr>
+        <td>19 &#9679;</td><td colspan="4"><div align="center">QPR</div></td>
+        <td>11</td>
+        <td >8</td>
+      </tr>
+      <tr>
+        <td>20 &#9679;</td><td colspan="4"><div align="center">Burnley</div></td>
+        <td>11</td>
+        <td >7</td>
+      </tr>
+      </tbody>
+    </table>
+
+  </section>
+
+
+
+
+</aside><!-- / .col-md-4  / #ccr-right-section -->
+
+
+</div><!-- /.container -->
+</section><!-- / #ccr-main-section -->

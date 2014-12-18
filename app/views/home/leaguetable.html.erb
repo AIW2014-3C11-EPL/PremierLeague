@@ -1,0 +1,464 @@
+<section id="ccr-main-section">
+<div class="container">
+
+
+<section id="ccr-left-section" class="col-md-8">
+
+<div class="current-page">
+  <a href="<%= Pathname(home_index_path) %>"><i class="fa fa-home"></i> <i class="fa fa-angle-double-right"></i></a>Bảng xếp hạng
+</div> <!-- / .current-page -->
+
+<section id="ccr-slide-main" class="carousel slide" data-ride="carousel">
+
+<table id="calendar">
+<caption >LIVE!</caption>
+<thead data-iceapc="1">
+<tr>
+  <th width="7%" title="Monday" scope="col">Pos</th>
+  <th width="7%" title="Tuesday" scope="col">&uarr; &darr;</th>
+  <th width="7%" title="Saturday" scope="col">LP</th>
+  <th width="23%" title="Sunday" scope="col">Club</th>
+  <th width="7%" title="Monday" scope="col">P</th>
+  <th width="7%" title="Tuesday" scope="col">W</th>
+  <th width="7%" title="Saturday" scope="col">D</th>
+  <th width="7%" title="Sunday" scope="col">L</th>
+  <th width="7%" title="Monday" scope="col">GF</th>
+  <th width="7%" title="Tuesday" scope="col">GA</th>
+  <th width="7%" title="Saturday" scope="col">GD</th>
+  <th width="7%" title="Sunday" scope="col">Pts</th>
+</tr>
+</thead>
+
+<tfoot data-iceapc="1">
+<tr>
+  <th title="Monday" scope="col">Pos</th>
+  <th title="Tuesday"scope="col" >&uarr; &darr;</th>
+  <th title="Saturday" scope="col">LP</th>
+  <th title="Sunday" scope="col">Club</th>
+  <th title="Monday" scope="col">P</th>
+  <th title="Tuesday" scope="col" >W</th>
+  <th title="Saturday" scope="col">D</th>
+  <th title="Sunday" scope="col">L</th>
+  <th title="Monday" scope="col">GF</th>
+  <th title="Tuesday" scope="col">GA</th>
+  <th title="Saturday" scope="col">GD</th>
+  <th title="Sunday" scope="col">Pts</th>
+</tr>
+</tfoot>
+
+<tbody data-iceapc="1">
+<tr>
+  <td title="Monday" scope="col">1</td>
+  <td title="Tuesday"scope="col" >&#45;</td>
+  <td title="Saturday" scope="col">(1)</td>
+  <td title="Sunday" scope="col"><div align="left">Chelsea</div></td>
+  <td title="Monday" scope="col">12</td>
+  <td title="Tuesday" scope="col" >10</td>
+  <td title="Saturday" scope="col">2</td>
+  <td title="Sunday" scope="col">0</td>
+  <td title="Monday" scope="col">30</td>
+  <td title="Tuesday" scope="col">11</td>
+  <td title="Saturday" scope="col">19</td>
+  <td title="Sunday" scope="col">32</td>
+</tr>
+<tr>
+  <td title="Monday" scope="col">2</td>
+  <td title="Tuesday"scope="col" >&#45;</td>
+  <td title="Saturday" scope="col">(2)</td>
+  <td title="Sunday" scope="col"><div align="left">Southampton</div></td>
+  <td title="Monday" scope="col">12</td>
+  <td title="Tuesday" scope="col" >8</td>
+  <td title="Saturday" scope="col">2</td>
+  <td title="Sunday" scope="col">2</td>
+  <td title="Monday" scope="col">24</td>
+  <td title="Tuesday" scope="col">6</td>
+  <td title="Saturday" scope="col">18</td>
+  <td title="Sunday" scope="col">26</td>
+</tr>
+<tr>
+  <td title="Monday" scope="col">3</td>
+  <td title="Tuesday"scope="col" >&#45;</td>
+  <td title="Saturday" scope="col">(3)</td>
+  <td title="Sunday" scope="col"><div align="left">Manchester City</div></td>
+  <td title="Monday" scope="col">12</td>
+  <td title="Tuesday" scope="col" >7</td>
+  <td title="Saturday" scope="col">3</td>
+  <td title="Sunday" scope="col">2</td>
+  <td title="Monday" scope="col">24</td>
+  <td title="Tuesday" scope="col">13</td>
+  <td title="Saturday" scope="col">11</td>
+  <td title="Sunday" scope="col">24</td>
+</tr>
+<tr>
+  <td title="Monday" scope="col">4</td>
+  <td title="Tuesday"scope="col" >&#45;</td>
+  <td title="Saturday" scope="col">(4)</td>
+  <td title="Sunday" scope="col"><div align="left">Manchester United</div></td>
+  <td title="Monday" scope="col">12</td>
+  <td title="Tuesday" scope="col" >5</td>
+  <td title="Saturday" scope="col">4</td>
+  <td title="Sunday" scope="col">3</td>
+  <td title="Monday" scope="col">19</td>
+  <td title="Tuesday" scope="col">15</td>
+  <td title="Saturday" scope="col">4</td>
+  <td title="Sunday" scope="col">19</td>
+</tr>
+<tr>
+  <td title="Monday" scope="col">5</td>
+  <td title="Tuesday"scope="col" >&#45;</td>
+  <td title="Saturday" scope="col">(5)</td>
+  <td title="Sunday" scope="col"><div align="left">Newcastle United</div></td>
+  <td title="Monday" scope="col">12</td>
+  <td title="Tuesday" scope="col" >5</td>
+  <td title="Saturday" scope="col">4</td>
+  <td title="Sunday" scope="col">3</td>
+  <td title="Monday" scope="col">14</td>
+  <td title="Tuesday" scope="col">15</td>
+  <td title="Saturday" scope="col">-1</td>
+  <td title="Sunday" scope="col">19</td>
+</tr>
+<tr>
+  <td title="Monday" scope="col">6</td>
+  <td title="Tuesday"scope="col" >&#45;</td>
+  <td title="Saturday" scope="col">(6)</td>
+  <td title="Sunday" scope="col"><div align="left">West Ham United</div></td>
+  <td title="Monday" scope="col">12</td>
+  <td title="Tuesday" scope="col" >5</td>
+  <td title="Saturday" scope="col">3</td>
+  <td title="Sunday" scope="col">4</td>
+  <td title="Monday" scope="col">20</td>
+  <td title="Tuesday" scope="col">16</td>
+  <td title="Saturday" scope="col">4</td>
+  <td title="Sunday" scope="col">18</td>
+</tr>
+<tr>
+  <td title="Monday" scope="col">7</td>
+  <td title="Tuesday"scope="col" >&#45;</td>
+  <td title="Saturday" scope="col">(7)</td>
+  <td title="Sunday" scope="col"><div align="left">Swansea City</div></td>
+  <td title="Monday" scope="col">12</td>
+  <td title="Tuesday" scope="col" >5</td>
+  <td title="Saturday" scope="col">3</td>
+  <td title="Sunday" scope="col">4</td>
+  <td title="Monday" scope="col">16</td>
+  <td title="Tuesday" scope="col">13</td>
+  <td title="Saturday" scope="col">3</td>
+  <td title="Sunday" scope="col">18</td>
+</tr>
+<tr>
+  <td title="Monday" scope="col">8</td>
+  <td title="Tuesday"scope="col" >&#45;</td>
+  <td title="Saturday" scope="col">(8)</td>
+  <td title="Sunday" scope="col"><div align="left">Arsenal</div></td>
+  <td title="Monday" scope="col">12</td>
+  <td title="Tuesday" scope="col" >4</td>
+  <td title="Saturday" scope="col">5</td>
+  <td title="Sunday" scope="col">3</td>
+  <td title="Monday" scope="col">20</td>
+  <td title="Tuesday" scope="col">15</td>
+  <td title="Saturday" scope="col">5</td>
+  <td title="Sunday" scope="col">17</td>
+</tr>
+<tr>
+  <td title="Monday" scope="col">9</td>
+  <td title="Tuesday"scope="col" >&#45;</td>
+  <td title="Saturday" scope="col">(9)</td>
+  <td title="Sunday" scope="col"><div align="left">Everton</div></td>
+  <td title="Monday" scope="col">12</td>
+  <td title="Tuesday" scope="col" >4</td>
+  <td title="Saturday" scope="col">5</td>
+  <td title="Sunday" scope="col">3</td>
+  <td title="Monday" scope="col">22</td>
+  <td title="Tuesday" scope="col">19</td>
+  <td title="Saturday" scope="col">3</td>
+  <td title="Sunday" scope="col">17</td>
+</tr>
+<tr>
+  <td title="Monday" scope="col">10</td>
+  <td title="Tuesday"scope="col" >&#45;</td>
+  <td title="Saturday" scope="col">(10)</td>
+  <td title="Sunday" scope="col"><div align="left">Tottenham Hotspur</div></td>
+  <td title="Monday" scope="col">12</td>
+  <td title="Tuesday" scope="col" >5</td>
+  <td title="Saturday" scope="col">2</td>
+  <td title="Sunday" scope="col">5</td>
+  <td title="Monday" scope="col">16</td>
+  <td title="Tuesday" scope="col">17</td>
+  <td title="Saturday" scope="col">-1</td>
+  <td title="Sunday" scope="col">17</td>
+</tr>
+<tr>
+  <td title="Monday" scope="col">11</td>
+  <td title="Tuesday"scope="col" >&#45;</td>
+  <td title="Saturday" scope="col">(11)</td>
+  <td title="Sunday" scope="col"><div align="left">Stoke City</div></td>
+  <td title="Monday" scope="col">12</td>
+  <td title="Tuesday" scope="col" >4</td>
+  <td title="Saturday" scope="col">3</td>
+  <td title="Sunday" scope="col">5</td>
+  <td title="Monday" scope="col">13</td>
+  <td title="Tuesday" scope="col">15</td>
+  <td title="Saturday" scope="col">-2</td>
+  <td title="Sunday" scope="col">15</td>
+</tr>
+<tr>
+  <td title="Monday" scope="col">12</td>
+  <td title="Tuesday"scope="col" >&#45;</td>
+  <td title="Saturday" scope="col">(12)</td>
+  <td title="Sunday" scope="col"><div align="left">Liverpool</div></td>
+  <td title="Monday" scope="col">12</td>
+  <td title="Tuesday" scope="col" >4</td>
+  <td title="Saturday" scope="col">2</td>
+  <td title="Sunday" scope="col">6</td>
+  <td title="Monday" scope="col">15</td>
+  <td title="Tuesday" scope="col">18</td>
+  <td title="Saturday" scope="col">-3</td>
+  <td title="Sunday" scope="col">14</td>
+</tr>
+<tr>
+  <td title="Monday" scope="col">13</td>
+  <td title="Tuesday"scope="col" >&#45;</td>
+  <td title="Saturday" scope="col">(13)</td>
+  <td title="Sunday" scope="col"><div align="left">West Bromwich Albion</div></td>
+  <td title="Monday" scope="col">12</td>
+  <td title="Tuesday" scope="col" >3</td>
+  <td title="Saturday" scope="col">4</td>
+  <td title="Sunday" scope="col">5</td>
+  <td title="Monday" scope="col">13</td>
+  <td title="Tuesday" scope="col">17</td>
+  <td title="Saturday" scope="col">-4</td>
+  <td title="Sunday" scope="col">13</td>
+</tr>
+<tr>
+  <td title="Monday" scope="col">14</td>
+  <td title="Tuesday"scope="col" >&#45;</td>
+  <td title="Saturday" scope="col">(14)</td>
+  <td title="Sunday" scope="col"><div align="left">Sunderland</div></td>
+  <td title="Monday" scope="col">12</td>
+  <td title="Tuesday" scope="col" >2</td>
+  <td title="Saturday" scope="col">7</td>
+  <td title="Sunday" scope="col">3</td>
+  <td title="Monday" scope="col">12</td>
+  <td title="Tuesday" scope="col">19</td>
+  <td title="Saturday" scope="col">-7</td>
+  <td title="Sunday" scope="col">13</td>
+</tr>
+<tr>
+  <td title="Monday" scope="col">15</td>
+  <td title="Tuesday"scope="col" >&#45;</td>
+  <td title="Saturday" scope="col">(15)</td>
+  <td title="Sunday" scope="col"><div align="left">Crystal Palace</div></td>
+  <td title="Monday" scope="col">12</td>
+  <td title="Tuesday" scope="col" >3</td>
+  <td title="Saturday" scope="col">3</td>
+  <td title="Sunday" scope="col">6</td>
+  <td title="Monday" scope="col">17</td>
+  <td title="Tuesday" scope="col">21</td>
+  <td title="Saturday" scope="col">-4</td>
+  <td title="Sunday" scope="col">12</td>
+</tr>
+<tr>
+  <td title="Monday" scope="col">16</td>
+  <td title="Tuesday"scope="col" >&uarr;</td>
+  <td title="Saturday" scope="col">(17)</td>
+  <td title="Sunday" scope="col"><div align="left">Aston Villa</div></td>
+  <td title="Monday" scope="col">12</td>
+  <td title="Tuesday" scope="col" >3</td>
+  <td title="Saturday" scope="col">3</td>
+  <td title="Sunday" scope="col">6</td>
+  <td title="Monday" scope="col">6</td>
+  <td title="Tuesday" scope="col">17</td>
+  <td title="Saturday" scope="col">-11</td>
+  <td title="Sunday" scope="col">12</td>
+</tr>
+<tr>
+  <td title="Monday" scope="col">17</td>
+  <td title="Tuesday"scope="col" >&darr;</td>
+  <td title="Saturday" scope="col">(16)</td>
+  <td title="Sunday" scope="col"><div align="left">Hull City</div></td>
+  <td title="Monday" scope="col">12</td>
+  <td title="Tuesday" scope="col" >2</td>
+  <td title="Saturday" scope="col">5</td>
+  <td title="Sunday" scope="col">5</td>
+  <td title="Monday" scope="col">14</td>
+  <td title="Tuesday" scope="col">17</td>
+  <td title="Saturday" scope="col">-3</td>
+  <td title="Sunday" scope="col">11</td>
+</tr>
+<tr>
+  <td title="Monday" scope="col">18</td>
+  <td title="Tuesday"scope="col" >&#45;</td>
+  <td title="Saturday" scope="col">(18)</td>
+  <td title="Sunday" scope="col"><div align="left">Leicester City</div></td>
+  <td title="Monday" scope="col">12</td>
+  <td title="Tuesday" scope="col" >2</td>
+  <td title="Saturday" scope="col">4</td>
+  <td title="Sunday" scope="col">6</td>
+  <td title="Monday" scope="col">11</td>
+  <td title="Tuesday" scope="col">18</td>
+  <td title="Saturday" scope="col">-7</td>
+  <td title="Sunday" scope="col">10</td>
+</tr>
+<tr>
+  <td title="Monday" scope="col">19</td>
+  <td title="Tuesday"scope="col" >&#45;</td>
+  <td title="Saturday" scope="col">(19)</td>
+  <td title="Sunday" scope="col"><div align="left">Burnley</div></td>
+  <td title="Monday" scope="col">12</td>
+  <td title="Tuesday" scope="col" >2</td>
+  <td title="Saturday" scope="col">4</td>
+  <td title="Sunday" scope="col">6</td>
+  <td title="Monday" scope="col">8</td>
+  <td title="Tuesday" scope="col">20</td>
+  <td title="Saturday" scope="col">-12</td>
+  <td title="Sunday" scope="col">10</td>
+</tr>
+<tr>
+  <td title="Monday" scope="col">20</td>
+  <td title="Tuesday"scope="col" >&#45;</td>
+  <td title="Saturday" scope="col">(20)</td>
+  <td title="Sunday" scope="col"><div align="left">Queens Park Rangers</div></td>
+  <td title="Monday" scope="col">12</td>
+  <td title="Tuesday" scope="col" >2</td>
+  <td title="Saturday" scope="col">2</td>
+  <td title="Sunday" scope="col">8</td>
+  <td title="Monday" scope="col">11</td>
+  <td title="Tuesday" scope="col">23</td>
+  <td title="Saturday" scope="col">-12</td>
+  <td title="Sunday" scope="col">8</td>
+</tr>
+
+</tbody>
+</table>
+
+
+</section><!-- /#ccr-slide-main -->
+
+
+
+<section class="bottom-border">
+</section> <!-- /#bottom-border -->
+
+
+
+
+<section id="ccr-world-news">
+
+
+  <table id="calendar">
+    <caption>Vua phá lưới</caption>
+    <thead data-iceapc="1">
+    <tr>
+      <th width="10%" title="Monday" scope="col">STT</th>
+      <th width="40%" title="Tuesday" scope="col">Tên</th>
+      <th width="40%" title="Saturday" scope="col">CLB</th>
+      <th width="10%" title="Sunday" scope="col">Bàn thắng</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+      <td title="Monday" scope="col">1</td>
+      <td scope="col" title="Tuesday"><div align="left">Sergio Agüero</div></td>
+      <td title="Saturday" scope="col"><div align="left">Manchester City</div></td>
+      <td title="Sunday" scope="col">12</td>
+    </tr>
+    <tr>
+      <td title="Monday" scope="col">2</td>
+      <td scope="col" title="Tuesday"><div align="left">Diego Costa</div></td>
+      <td title="Saturday" scope="col"><div align="left">Chelsea</div></td>
+      <td title="Sunday" scope="col">11</td>
+    </tr>
+    <tr>
+      <td title="Monday" scope="col">3</td>
+      <td scope="col" title="Tuesday"><div align="left">Alexis Sánchez</div></td>
+      <td title="Saturday" scope="col"><div align="left">Arsenal</div></td>
+      <td title="Sunday" scope="col">8</td>
+    </tr>
+    <tr>
+      <td title="Monday" scope="col">4</td>
+      <td scope="col" title="Tuesday"><div align="left">Saido Berahino</div></td>
+      <td title="Saturday" scope="col"><div align="left">West Brom</div></td>
+      <td title="Sunday" scope="col">7</td>
+    </tr>
+    <tr>
+      <td title="Monday" scope="col">5</td>
+      <td scope="col" title="Tuesday"><div align="left">Charlie Austin</div></td>
+      <td title="Saturday" scope="col"><div align="left">Queens Park Rangers</div></td>
+      <td title="Sunday" scope="col">6</td>
+    </tr>
+
+    </tbody>
+  </table>
+
+</section> <!-- / #ccr-world-news -->
+
+
+</section><!-- /.col-md-8 / #ccr-left-section -->
+
+
+
+<aside id="ccr-right-section" class="col-md-4 ccr-home">
+
+
+  <section id="sidebar-popular-post">
+    <div class="ccr-gallery-ttile">
+      <span></span>
+      <p><strong>Features</strong></p>
+    </div> <!-- .ccr-gallery-ttile -->
+    <ul>
+      <li>
+        <img src="<%=  image_path('sports-thumb-10.jpg') %>" alt="Avatar">
+        <a href="#">On this day in 1994: Little makes winning start at Villa</a>
+        <div class="date-like-comment">
+          <span class="date"><time datetime="2014-02-17">2014-02-17</time></span>
+          <a class="like" href="#"><i class="fa fa-thumbs-o-up"></i> 08</a>
+          <a class="comments" href="#"><i class="fa fa-comments-o"></i> 49</a>
+        </div>
+      </li>
+      <li>
+        <img src="<%=  image_path('thumbnail-small-7-7.jpg') %>" alt="Avatar">
+        <a href="#">On this day in 2001: Leaders Leeds beaten by Sunderland</a>
+        <div class="date-like-comment">
+          <span class="date"><time datetime="2014-02-17">2014-02-17</time></span>
+          <a class="like" href="#"><i class="fa fa-thumbs-o-up"></i> 08</a>
+          <a class="comments" href="#"><i class="fa fa-comments-o"></i> 49</a>
+        </div>
+      </li>
+      <li>
+        <img src="<%=  image_path('sports-thumb-5-5.jpg') %>" alt="Avatar">
+        <a href="#">Premier League International Cup</a>
+        <div class="date-like-comment">
+          <span class="date"><time datetime="2014-02-17">2014-02-17</time></span>
+          <a class="like" href="#"><i class="fa fa-thumbs-o-up"></i> 08</a>
+          <a class="comments" href="#"><i class="fa fa-comments-o"></i> 49</a>
+        </div>
+      </li>
+      <li>
+        <img src="<%=  image_path('thumbnail-small-2-2.jpg') %>" alt="Avatar">
+        <a href="#">Aguero and Di Maria lead all-star South American XI</a>
+        <div class="date-like-comment">
+          <span class="date"><time datetime="2014-02-17">2014-02-17</time></span>
+          <a class="like" href="#"><i class="fa fa-thumbs-o-up"></i> 08</a>
+          <a class="comments" href="#"><i class="fa fa-comments-o"></i> 49</a>
+        </div>
+      </li>
+      <li>
+        <img src="<%= image_path('thumbnail-small-5-5.jpg') %>" alt="Avatar">
+        <a href="#">On this day in 2012: Pilkington stuns Man Utd at Carrow Road</a>
+        <div class="date-like-comment">
+          <span class="date"><time datetime="2014-02-17">2014-02-17</time></span>
+          <a class="like" href="#"><i class="fa fa-thumbs-o-up"></i> 08</a>
+          <a class="comments" href="#"><i class="fa fa-comments-o"></i> 49</a>
+        </div>
+      </li>
+    </ul>
+
+  </section> <!-- /#sidebar-popular-post -->
+
+
+</aside><!-- / .col-md-4  / #ccr-right-section -->
+
+
+</div><!-- /.container -->
+</section><!-- / #ccr-main-section -->
