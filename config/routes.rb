@@ -10,9 +10,22 @@ Rails.application.routes.draw do
   get 'home/new1', to: 'home#new1', as: 'home_new1'
   get 'home/new2', to: 'home#new2', as: 'home_new2'
   get 'home/new3', to: 'home#new3', as: 'home_new3'
+  get 'home/new4', to: 'home#new4', as: 'home_new4'
+  get 'home/new5', to: 'home#new5', as: 'home_new5'
+  get 'home/new6', to: 'home#new6', as: 'home_new6'
+  get 'home/new7', to: 'home#new7', as: 'home_new7'
+  get 'home/new8', to: 'home#new8', as: 'home_new8'
+  get 'home/new9', to: 'home#new9', as: 'home_new9'
+  get 'home/new10', to: 'home#new10', as: 'home_new10'
+  get 'home/new11', to: 'home#new11', as: 'home_new11'
   get 'home/single/:id', to: 'home#single', as: 'home_single'
   get 'home/player/:id', to: 'home#player', as: 'home_player'
   get 'home/detail/:id', to: 'home#detail', as: 'home_detail'
+  get 'home/old', to: 'home#old', as: 'home_old'
+  get 'home/emi', to: 'home#emi', as: 'home_emi'
+  get 'home/an', to: 'home#an', as: 'home_an'
+  get 'home/stam', to: 'home#stam', as: 'home_stam'
+  get 'home/eti', to: 'home#eti', as: 'home_eti'
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
